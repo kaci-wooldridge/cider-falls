@@ -13,12 +13,12 @@ const areaServices = () => {
     let eachAreaHtml = ""
     
     for (const area of parks) {
-        eachAreaHtml += `${area.name} has `
+        eachAreaHtml += `${area.name} `
         if (Array.isArray(area.serviceId)){
             for (let i=0; i<area.serviceId.length; i++){
                 for (const service of services) {
                     if(service.id === area.serviceId[i]) {
-                         eachAreaHtml += `${service.name} `
+                         eachAreaHtml += `<li> ${service.name} </li>`
                     }   
                 }
             }
