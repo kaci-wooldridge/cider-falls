@@ -12,7 +12,7 @@ const parkAreas = [
     {
         id: 3,
         name: "The Lodge",
-        extras: ["hotel", "restaurant"],
+        extras: ["Hotel", "Restaurant"],
         serviceId: [3, 7, 8, 9]
     },
     {
@@ -22,14 +22,14 @@ const parkAreas = [
     },
     {
         id: 5,
-        name: "the Campgrounds",
-        extras: ["office park", "playgrounds"],
+        name: "The Campgrounds",
+        extras: ["Office park", "Playgrounds"],
         serviceId: [7, 8, 9]
     },
     {
         id: 6,
         name: "Pine Bluffs Trails",
-        extras: "food vendors",
+        extras: "Food Vendors",
         serviceId: [4, 5, 10]
     }
 ]
@@ -37,43 +37,43 @@ const parkAreas = [
 const services = [
     {
         id: 1,
-        name: "rafting",
+        name: "Rafting",
     },
     {
         id: 2,
-        name: "canoeing"
+        name: "Canoeing"
     },
     {
         id: 3,
-        name: "fishing"
+        name: "Fishing"
     },
     {
         id: 4,
-        name:"hiking"
+        name:"Hiking"
     },
     {
         id: 5,
-        name:"picnicking"
+        name:"Picnicking"
     },
     {
         id: 6,
-        name:"rock climbing"
+        name:"Rock Climbing"
     },
     {
         id: 7,
-        name: "lodging"
+        name: "Lodging"
     },
     {
         id: 8,
-        name: "parking"
+        name: "Parking"
     },
     {
         id: 9,
-        name: "information"
+        name: "Information"
     },
     {
         id: 10,
-        name: "zip lines"
+        name: "Zip Lines"
     }
 ]
 
