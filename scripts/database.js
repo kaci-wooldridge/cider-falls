@@ -3,7 +3,6 @@ const parkAreas = [
         id: 1,
         name: "Chamfort River",
         serviceId:[ 1, 2, 3],
-        guestId: 1
     },
     {
         id: 2,
@@ -81,7 +80,13 @@ const services = [
 const guests = [
     {
         id: 1,
-        name: "Billy-Bob jr"
+        name: "Billy-Bob jr",
+        parkId: 1
+    },
+    {
+        id: 2, 
+        name: "Hunter Martinez",
+        parkId: 2
     }
 ]
 
