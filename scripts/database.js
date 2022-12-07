@@ -82,6 +82,11 @@ const guests = [
         id: 1,
         name: "Billy-Bob jr",
         parkId: 1
+    },
+    {
+        id: 2, 
+        name: "Hunter Martinez",
+        parkId: 2
     }
 ]
 

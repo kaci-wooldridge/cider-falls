@@ -1,33 +1,47 @@
 import { guestList } from "./database.js";
-import { randomName } from "./nameGen.js";
+import { randomName, getFirstName, getLastName } from "./nameGen.js";
 const theGuestList = guestList()
-let newName = randomName()
+const FN = getFirstName()
+const LN = getLastName()
 
-const newNames = () =>{
-    const namesArray = []
+const randomFirstName = FN[Math.floor(Math.random() * FN.length)];
+const randomLastName = LN[Math.floor(Math.random() * LN.length)];
+
+
+
+
+
+
+// const newName = randomName();
+// console.log(newName)
+const  addGuestsToList = () => {
+    
+
     for (let i = 0; i < 10; i++){
-        namesArray.push(randomName())
-    }
-    return namesArray
-}
-console.log(newNames())
-
-const addGuestsToDataBase = () =>{
-    let newGuest = {}
-    for (let j = 0; j < 10; j++){
-        
+     
+        let newGuest = {}
         newGuest.id = theGuestList.length + 1
-        newGuest.name = newName
+        newGuest.name = randomName()
+        console.log("second:", randomName())
+        newGuest.parkId = Math.floor(Math.random() * (6-1) + 1)
         theGuestList.push(newGuest)
-        newGuest={}
-    }
-    return theGuestList
+        
+        }
+    
 }
-addGuestsToDataBase()
-console.log(theGuestList)
 
-export const guests = () =>{
-    for (const guest of theGuestList){
-        return guest.name
-    }
+
+
+
+export const Guests = () => {
+    addGuestsToList()
+
+
+    let final = "<ul>"
+    for (const guest of theGuestList) {
+         final += `<li> ${guest.name} </li>`
+        }
+    final += "</ul>"
+    return final
 }
+

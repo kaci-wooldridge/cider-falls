@@ -23,12 +23,14 @@ const lastNames = [
     "Diaz","Richardson","Wood","Watson","Brooks","Bennett","Gray","James"
 ]
 
-const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];
-const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+// const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+// const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
 
 
 export const randomName = () =>{
-    return `${randomFirstName} ${randomLastName}`
+  let fullname = `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}`
+
+  return fullname
 }
 
 // export const randomName = function* () {
@@ -39,3 +41,11 @@ export const randomName = () =>{
 
 //     }
 // }()
+
+export const getFirstName = () => {
+    return firstNames.map(fn => ([...fn]))
+}
+
+export const getLastName = () => {
+    return lastNames.map(ln => ([...ln]))
+}
