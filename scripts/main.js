@@ -10,49 +10,28 @@ const services = serviceList()
 const areaWithService = () => {}
 
 const areaServices = () => {
-    let eachAreaHtml = ""
+    let eachAreaHtml = ``
     
     for (const area of parks) {
-        eachAreaHtml += `${area.name} `
+        eachAreaHtml += `<div class="park" id="area-${area.id}"><h2 class="park-name"> ${area.name} </h2>`
         if (Array.isArray(area.serviceId)){
             for (let i=0; i<area.serviceId.length; i++){
                 for (const service of services) {
                     if(service.id === area.serviceId[i]) {
-                         eachAreaHtml += `<li> ${service.name} </li>`
+                         eachAreaHtml += `<li class="services">${service.name} </li>`
                     }   
                 }
             }
         }  
+        eachAreaHtml += `</div>` 
     }
     return eachAreaHtml
 }
 
 const applicationHTML = `
-${areaServices()}
-`
-const RenderHtml = () => {
-   
-    return mainContainer.innerHTML = `
-    <h1> Cider Falls</h1>
-    
-    <article class="parkAreas">
-        <section class="park1">
-            <h2>Chamfort River</h2>
-            
-        </section>
-        <section class="park2">
-            <h2>Lost Wolf Hiking Trail</h2>
-            
-        </section>
-        <section class="park3">
-            <h2>The Lodge</h2>
-            
-        </section>
-        
-    </article>
-    `
-}
-
+<section class="parks-services">
+    ${areaServices()}
+</section>`
 
 const mainContainer = document.querySelector(".container")
 mainContainer.innerHTML = applicationHTML
