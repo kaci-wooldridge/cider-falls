@@ -1,0 +1,23 @@
+.parks-services{
+    display:flex;
+    flex-flow: row wrap;
+    padding: 4px;
+    border: 4px solid aquamarine;
+    justify-content: space-around;
+    
+}
+
+.park{
+    width: 30%;
+    margin: 4px;
+    border: 2px solid palevioletred;
+    padding: 7px;
+}
+
+#area-3{
+    order: -2;
+}
+
+#area-2{
+    order: -1;
+}
