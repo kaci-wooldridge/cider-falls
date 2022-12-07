@@ -8,13 +8,30 @@ const parkAreas = [
     {
         id: 2,
         name: "Lost Wolf Hiking Trail",
-        serviceId:[1, 2, 3],
+        serviceId:[4, 5, 6],
     },
     {
         id: 3,
         name: "the Lodge",
         extras: ["hotel", "restaurant"],
-        serviceId: [4, 5, 6]
+        serviceId: [3, 7, 8, 9]
+    },
+    {
+        id: 4,
+        name: "Gander River",
+        serviceId: [3, 4]
+    },
+    {
+        id: 5,
+        name: "the Campgrounds",
+        extras: ["office park", "playgrounds"],
+        serviceId: [7, 8, 9]
+    },
+    {
+        id: 6,
+        name: "Pine Bluffs Trails",
+        extras: "food vendors",
+        serviceId: [4, 5, 10]
     }
 ]
 
@@ -42,6 +59,22 @@ const services = [
     {
         id: 6,
         name:"rock climbing"
+    },
+    {
+        id: 7,
+        name: "lodging"
+    },
+    {
+        id: 8,
+        name: "parking"
+    },
+    {
+        id: 9,
+        name: "information"
+    },
+    {
+        id: 10,
+        name: "zip lines"
     }
 ]
 
