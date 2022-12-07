@@ -12,7 +12,7 @@ const parkAreas = [
     },
     {
         id: 3,
-        name: "the Lodge",
+        name: "The Lodge",
         extras: ["hotel", "restaurant"],
         serviceId: [3, 7, 8, 9]
     },
