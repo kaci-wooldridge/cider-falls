@@ -11,6 +11,7 @@ body{
     letter-spacing: .09rem;
     /* border: 4px solid rgb(189, 19, 24); */
     background-color: rgba(75, 92, 35, 0.808);
+
     
 }
 
@@ -19,6 +20,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     padding: 4px;
+    
 }
 
 .header_1{
@@ -47,17 +49,21 @@ body{
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
     background-color: rgb(253, 243, 229);
     
 }
 .park-guest-list{
     border: 4px solid rgb(34, 121, 202);
+    justify-content: flex-end;
+    position: relative;
     margin-top: 8px;
     padding: 4px;
     width: 20%;
-    height: 517px;
+    height: 481px;
     background-color: rgb(253, 243, 229);
-    position: ;
+    order: 4;
+    
     
 }
 .park-info{
@@ -78,7 +84,7 @@ body{
 }
 .park-name{
     display: flex;
-    flex-flow: ;
+    
     align-items: center;
     text-shadow: 2px 2px rgb(255, 255, 232);
     

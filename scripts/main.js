@@ -21,12 +21,6 @@ const applicationHTML = `
 `
 
 
-
-// document.addEventListener("stateChanged", event => {
-//     console.log("State of data has changed. Regenerating HTML...")
-//     renderAllHTML()
-// })
-
 const mainContainer = document.querySelector(".container")
 mainContainer.innerHTML = applicationHTML
 
