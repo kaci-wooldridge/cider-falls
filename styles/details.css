@@ -1,89 +1,127 @@
-body{
-    font-family: 'Jurassic Park', sans-serif;
-    letter-spacing: .09rem;
-    border: 4px solid rgb(189, 19, 24)
-                                                
-}
-
-.parks-services{
-    display:flex;
-    flex-flow: row wrap;
-    padding: 4px;
-    border: );
-    justify-content: space-around;
-    width:76.9%;
-    
-}
-
-.park{
-    width: 24%;
-    margin: 4px;
-    border: 4px solid rgb(34, 121, 202);
-    padding: 7px;
-    flex-grow: 1;
-    font-size: 25px;
-    text-align: center;
-    
+#area-2{
+    order: -1;
 }
 
 #area-3{
     order: -2;
 }
 
-#area-2{
-    order: -1;
+body{
+    font-family: 'Jurassic Park', sans-serif;
+    letter-spacing: .09rem;
+    /* border: 4px solid rgb(189, 19, 24); */
+    background-color: rgba(75, 92, 35, 0.808);
+    
 }
 
 .container{
-    border: 4px solid rgb(189, 19, 24);
+    /* border: 4px solid rgb(189, 19, 24); */
     display: flex;
     flex-flow: row wrap;
     padding: 4px;
 }
 
-.park-guest-list{
-    border: 4px solid rgb(34, 121, 202);
-    justify-content: flex-end;
-    margin-left: 2px;
-    padding: 4px;
-    width: 20%;
-}
-
-.park-info{
-    align-self: flex-end;
-    border: 4px solid rgb(34, 121, 202);
-    margin: 4px;
-    padding: 2px;
-    /* width: 98%; */
-
-}
-
 .header_1{
     display: flex;
+    text-shadow: 2px 2px gainsboro;
     /* border: 4px solid rgb(189, 19, 24); */
 }
 
 .header-words{
     margin: 50px 0px 0px;
     text-align: center;
-    font-size: 100px;
+    font-size: 150px;
     width: 50%;
     letter-spacing: .3rem;
 }
-
+.info {
+    text-align: center;
+}
+.park{
+    width: 10%;
+    margin: 4px;
+    border: 4px solid rgb(34, 121, 202);
+    padding: 50px;
+    flex-grow: 1;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(253, 243, 229);
+    
+}
+.park-guest-list{
+    border: 4px solid rgb(34, 121, 202);
+    justify-content: flex-end;
+    margin-top: 8px;
+    padding: 4px;
+    width: 20%;
+    height: 517px;
+    background-color: rgb(253, 243, 229);
+}
+.park-info{
+    align-self: flex-end;
+    border: 4px solid rgb(34, 121, 202);
+    margin: 4px;
+    padding: 2px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(253, 243, 229);
+    text-shadow: 2px 2px rgb(255, 255, 232);
+    font-size: 30px;
+    
+}
 .park-logo {
     width: 200px;
     margin-right: 55px;
 }
+.park-name{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-shadow: 2px 2px rgb(255, 255, 232);
+    
+    
+}
+.parks-services{
+    display:flex;
+    flex-flow: row wrap;
+    padding: 4px;
+    
+    justify-content: space-around;
+    width:76.9%;
+    
+}
+.services{
+    font-size: 24px;
+    padding: 2px;
+    text-shadow: 2px 2px rgb(255, 255, 232);
+    
+}
+
 
 .services-offered{
-    border: 4px solid greenyellow;
+    background-color: rgb(253, 243, 229);
+    border: 4px solid rgb(34, 121, 202);
     width: 100%;
+    height: 50px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-
+    
+    
+}
+.title-guest{
+    text-align: center;
+}
+.title-park{
+    text-align: center;
+    width: 100%;
 }
 
-.services{
-    width:
-}
+
+
+
+
+
+

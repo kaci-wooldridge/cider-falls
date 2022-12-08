@@ -6,7 +6,7 @@ const parks = parkList()
 
 const  addGuestsToList = () => {
 
-    for (let i = 0; i < 20; i++){
+    for (let i = 0; i < 26; i++){
      
         let newGuest = {}
         newGuest.id = theGuestList.length + 1

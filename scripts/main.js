@@ -14,7 +14,7 @@ const applicationHTML = `
     ${parkNames()}
 </section>
 <section class="park-guest-list">
-    <h2>Park Guests</h2>
+    <h2 class="title-guest">Park Guests</h2>
     <div>${Guests()}</div>
 </section>
 
