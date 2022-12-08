@@ -1,6 +1,8 @@
 import { parkList, serviceList } from "./database.js";
+import { parkLocations } from "./parkAreas.js";
 const services = serviceList()
 const parks = parkList()
+
 
 // export const areaServices = () => {
 //     let eachAreaHtml = ``
@@ -28,3 +30,14 @@ export const areaServices = () =>{
     }
     return html += ``
 }
+
+document.addEventListener("click", (clickEvent) => {
+    const itemClicked = clickEvent.target
+  
+      if (itemClicked.id.startsWith("service")) {
+  
+      const [,serviceKey] = itemClicked.id.split("--")
+
+          parkLocations(serviceKey)
+      }
+})
