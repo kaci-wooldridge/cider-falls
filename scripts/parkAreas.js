@@ -17,14 +17,21 @@ document.addEventListener("click", (clickEvent) => {
 
 
 export const parkNames = () =>{
-    let html = ``
-
-    const listItems =
-    parks.map(park =>{
-        return `${park.name}`
-    })
-
-    html += listItems.join(" ")
-    return html
+    let eachAreaHtml = ``
+    
+    for (const area of parks) {
+        eachAreaHtml += `<div class="park" id="area-${area.id}"><h2 class="park-name" id="area--${area.id}"> ${area.name} </h2>`
+        // if (Array.isArray(area.serviceId)){
+        //     for (let i=0; i<area.serviceId.length; i++){
+        //         for (const service of services) {
+        //             if(service.id === area.serviceId[i]) {
+        //                  eachAreaHtml += `<li class="services">${service.name} </li>`
+        //             }   
+        //         }
+        //     }
+        // }  
+        eachAreaHtml += `</div>` 
+    }
+    return eachAreaHtml
 }
 
