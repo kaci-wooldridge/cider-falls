@@ -48,6 +48,10 @@
 
 }
 
-.header{
+header{
     border: 2px solid rgb(181, 238, 158);
+}
+
+.header-words{
+    text-align: center;
 }
