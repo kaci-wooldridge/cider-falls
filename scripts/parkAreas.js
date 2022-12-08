@@ -1,7 +1,22 @@
-import { parkList } from "./database.js";
+import { parkList, serviceList } from "./database.js";
 import { youAreHere } from "./guests.js";
 const parks = parkList()
+const services = serviceList()
 
+export const parkLocations = (target) => {
+    let location = `Available at:\n `
+    for (const park of parks) {
+            if (Array.isArray(park.serviceId)){
+                for (let i=0; i<park.serviceId.length; i++){
+                    if(parseInt(target) === park.serviceId[i]) {
+                        location += `\n~${park.name}\n`
+                    }   
+                
+            }
+        }  
+    }
+    return window.alert(location)
+}
 
 document.addEventListener("click", (clickEvent) => {
       const itemClicked = clickEvent.target
@@ -12,7 +27,7 @@ document.addEventListener("click", (clickEvent) => {
 
             youAreHere(areaKey)
         }
-    })
+})
 
 
 
