@@ -1,3 +1,8 @@
+body{
+    font-family: 'Jurassic Park', sans-serif;
+                                                
+}
+
 .parks-services{
     display:flex;
     flex-flow: row wrap;
