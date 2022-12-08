@@ -6,7 +6,7 @@ const parks = parkList()
 
 const  addGuestsToList = () => {
 
-    for (let i = 0; i < 26; i++){
+    for (let i = 0; i < 22; i++){
      
         let newGuest = {}
         newGuest.id = theGuestList.length + 1
@@ -24,7 +24,7 @@ export const Guests = () => {
 
     let final = "<ul>"
     for (const guest of theGuestList) {
-         final += `<li> ${guest.name} </li>`
+         final += `<div> + ${guest.name}  </div>`
         }
     final += "</ul>"
     return final
