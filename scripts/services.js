@@ -6,7 +6,7 @@ export const areaServices = () => {
     let eachAreaHtml = ``
     
     for (const area of parks) {
-        eachAreaHtml += `<div class="park" id="area-${area.id}"><h2 class="park-name"> ${area.name} </h2>`
+        eachAreaHtml += `<div class="park" id="area-${area.id}"><h2 class="park-name" id="area--${area.id}"> ${area.name} </h2>`
         if (Array.isArray(area.serviceId)){
             for (let i=0; i<area.serviceId.length; i++){
                 for (const service of services) {

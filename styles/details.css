@@ -53,10 +53,19 @@ body{
 
 }
 
-header{
+.header_1{
     display: flex;
     border: 2px solid rgb(181, 238, 158);
 }
 
 .header-words{
+    margin: 50px 0px 0px;
     text-align: center;
+    font-size: 100px;
+    width: 50%;
+}
+
+.park-logo {
+    width: 200px;
+    margin-right: 55px;
+}
