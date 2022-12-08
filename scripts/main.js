@@ -6,9 +6,12 @@ import { areaServices } from "./services.js"
 
 
 const applicationHTML = `
+<section class="services-offered">
+    ${areaServices()}
+</section>
 
 <section class="parks-services">
-    ${areaServices()}
+    ${parkNames()}
 </section>
 <section class="park-guest-list">
     <h2>Park Guests</h2>

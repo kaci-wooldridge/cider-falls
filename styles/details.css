@@ -1,5 +1,7 @@
 body{
     font-family: 'Jurassic Park', sans-serif;
+    letter-spacing: .09rem;
+    border: 4px solid rgb(189, 19, 24)
                                                 
 }
 
@@ -7,7 +9,7 @@ body{
     display:flex;
     flex-flow: row wrap;
     padding: 4px;
-    border: 4px solid rgb(238, 7, 14);
+    border: );
     justify-content: space-around;
     width:76.9%;
     
@@ -16,9 +18,12 @@ body{
 .park{
     width: 24%;
     margin: 4px;
-    border: 2px solid palevioletred;
+    border: 4px solid rgb(34, 121, 202);
     padding: 7px;
     flex-grow: 1;
+    font-size: 25px;
+    text-align: center;
+    
 }
 
 #area-3{
@@ -30,14 +35,14 @@ body{
 }
 
 .container{
-    border:;
+    border: 4px solid rgb(189, 19, 24);
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     padding: 4px;
 }
 
 .park-guest-list{
-    border: 4px solid rgb(245, 162, 115);
+    border: 4px solid rgb(34, 121, 202);
     justify-content: flex-end;
     margin-left: 2px;
     padding: 4px;
@@ -46,7 +51,7 @@ body{
 
 .park-info{
     align-self: flex-end;
-    border: 4px solid rgb(238, 7, 14);
+    border: 4px solid rgb(34, 121, 202);
     margin: 4px;
     padding: 2px;
     /* width: 98%; */
@@ -55,7 +60,7 @@ body{
 
 .header_1{
     display: flex;
-    border: 2px solid rgb(181, 238, 158);
+    /* border: 4px solid rgb(189, 19, 24); */
 }
 
 .header-words{
@@ -63,9 +68,22 @@ body{
     text-align: center;
     font-size: 100px;
     width: 50%;
+    letter-spacing: .3rem;
 }
 
 .park-logo {
     width: 200px;
     margin-right: 55px;
+}
+
+.services-offered{
+    border: 4px solid greenyellow;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.services{
+    width:
 }
