@@ -1,23 +1,12 @@
-import { guestList } from "./database.js";
-import { randomName, getFirstName, getLastName } from "./nameGen.js";
+import { guestList, parkList } from "./database.js";
+import { randomName } from "./nameGen.js";
 const theGuestList = guestList()
-const FN = getFirstName()
-const LN = getLastName()
-
-const randomFirstName = FN[Math.floor(Math.random() * FN.length)];
-const randomLastName = LN[Math.floor(Math.random() * LN.length)];
+const parks = parkList()
 
 
-
-
-
-
-// const newName = randomName();
-// console.log(newName)
 const  addGuestsToList = () => {
-    
 
-    for (let i = 0; i < 10; i++){
+    for (let i = 0; i < 20; i++){
      
         let newGuest = {}
         newGuest.id = theGuestList.length + 1
@@ -26,16 +15,12 @@ const  addGuestsToList = () => {
         newGuest.parkId = Math.floor(Math.random() * (6-1) + 1)
         theGuestList.push(newGuest)
         
-        }
-    
+        } 
 }
-
-
-
 
 export const Guests = () => {
     addGuestsToList()
-
+    console.log(theGuestList)
 
     let final = "<ul>"
     for (const guest of theGuestList) {
@@ -45,3 +30,13 @@ export const Guests = () => {
     return final
 }
 
+export const youAreHere = (target) => {
+    let guestNumber = 0
+    
+    for (const guest of theGuestList) {
+        if(guest.parkId === parseInt(target)) {
+            guestNumber++
+        }
+    }
+    return window.alert("There are " + guestNumber + " guests in this area.")
+}
